@@ -1,0 +1,20 @@
+{
+    "logs_bucket": "gs://cbuilder/long_build",
+    "source": {
+        "storageSource": {
+            "bucket": "cbuilder/long_build/",
+            "object": "filejKb7qm.zip"
+        }
+    },
+    "steps": [
+        {
+            "name": "gcr.io/cloud-builders/dockerizer",
+            "args": [
+                "gcr.io/realdeptest-p2d/long_build"
+            ]
+        }
+    ],
+    "images": [
+        "gcr.io/realdeptest-p2d/long_build"
+    ]
+}

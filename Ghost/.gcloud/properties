@@ -1,0 +1,4 @@
+[app]
+suppress_change_warning = true
+use_cloud_build = 1
+

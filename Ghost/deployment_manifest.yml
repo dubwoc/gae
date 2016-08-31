@@ -1,0 +1,14 @@
+{
+ "deployment":
+  {
+    "container":
+    {"image": "gcr.io/project/image:latest"}
+  },
+ "threadsafe": true,
+"manualScaling": {"instances": 1},
+"vm": true,
+"betaSettings": {"has_docker_image": "true"},
+"handlers": [{"urlRegex": "/", "script": {"scriptPath": "main.root"}}],
+"id": "VERSIONID",
+"runtime": "python27"
+}
