@@ -5,4 +5,5 @@ RUN mkdir /nodejs && curl https://nodejs.org/dist/v0.12.7/node-v0.12.7-linux-x64
 
 ENV PATH $PATH:/nodejs/bin
 WORKDIR /app
+
 CMD ["npm", "start"]
